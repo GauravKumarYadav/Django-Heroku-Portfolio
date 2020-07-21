@@ -10,7 +10,7 @@
     <li><i>conda activate envName</i></li>
   </ul>
   <h3><strong>Installing on local machine</strong></h3>
-  <p> comment the line <i><b>import django_heroku</i></b> and <b><i>django_heroku.settings(locals())</i></b> in <b>pdfconverter/settings.py</b> file and remove </b><i>django_heroku package</i></b> from <b>requirements.txt</b> file</p>
+  <p> comment the line <i><b>import django_heroku</i></b> and <b><i>django_heroku.settings(locals())</i></b> in <b>pdfconverter/settings.py</b> file and remove <b><i>django_heroku package</i></b> from <b>requirements.txt</b> file</p>
   <ul>
     <li><i>pip install -r requirements.txt</i></li>
   </ul>
