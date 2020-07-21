@@ -1,0 +1,11 @@
+libpng-dev
+libtool
+autoconf
+build-essential
+pkg-config
+automake
+tcsh
+libjpeg62
+libping
+libpng12
+poppler-utils

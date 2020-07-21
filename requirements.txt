@@ -1,0 +1,13 @@
+asgiref==3.2.10
+certifi==2020.6.20
+chardet==3.0.4
+Django==3.0.8
+pdfminer==20191125
+pdfminer.six==20200517
+pycryptodome==3.9.8
+PyMuPDF==1.17.3
+pytz==2020.1
+sortedcontainers==2.2.2
+sqlparse==0.3.1
+django-heroku==0.3.1
+gunicorn==20.0.4

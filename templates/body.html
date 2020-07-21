@@ -1,0 +1,33 @@
+{% extends "index.html" %}
+
+{% block content %}
+<div class="container">
+    <!-- <div class="well"> -->
+        <div class="col-sm-8 text-left well"> 
+            <form action="{% url 'postlist' %}" method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="form-group">
+                    {{ form.as_table }}
+                <button type="submit">Upload</button>
+                </div>
+            </form>
+            {% if post %}
+                {% for i in post %}
+                    <p>{{ i }}
+                        <a href="{{ path }}{{ i }}" download="{{ i }}"><button type="submit">Download!</button></a>
+                    </p>
+                {% endfor %}
+            {% endif %}
+        </div>
+    <!-- </div> -->
+</div>
+{% endblock %}
+{% block contact %}
+<form action="{% url 'sendcontactform' %}" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div class="form-group">
+        {{ form1.as_table }}
+    <button type="submit">submit</button>
+    </div>
+</form>
+{% endblock %}
